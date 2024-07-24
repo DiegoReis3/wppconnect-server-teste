@@ -8,7 +8,7 @@
   "scripts": {
     "build:types": "tsc",
     "build:js": "rimraf dist && babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline --copy-files",
-    "build": "npm run build:types && npm run build:js && wppconnect-server-test build --output public",
+    "build": "npm run build:types && npm run build:js && npm build --output public",
     "changelog:last": "conventional-changelog -p angular -r 2",
     "changelog:preview": "conventional-changelog -p angular -u",
     "changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s",
